@@ -1,0 +1,51 @@
+inherited frmCustomer: TfrmCustomer
+  Caption = #1040#1073#1086#1085#1077#1085#1090
+  DesignerMasterStyle = 3
+  inherited Content: TRectangle
+    inherited rHeader: TRectangle
+      Fill.Color = claWhite
+      inherited lbTitle: TLabel
+        TextSettings.FontColor = claBlack
+        Text = #1040#1073#1086#1085#1077#1085#1090
+      end
+      inherited sbBookmark: TSpeedButton
+        Size.Height = 48.000000000000000000
+        OnClick = sbBookmarkClick
+      end
+    end
+    inherited lvContent: TListView
+      OnUpdatingObjects = lvContentUpdatingObjects
+      object fgSheet: TfgActionSheet
+        Actions = <>
+        Theme = Light
+        Title = #1055#1086#1079#1074#1086#1085#1080#1090#1100
+        OnItemClick = fgSheetItemClick
+        Left = 144
+        Top = 288
+      end
+    end
+    object btnEditCustomer: TZMaterialActionButton
+      Position.X = 256.000000000000000000
+      Position.Y = 416.000000000000000000
+      Size.Width = 56.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = btnEditCustomerClick
+      Color = xFFFF6600
+      ShadowDistance = 1.000000000000000000
+      ShadowSoftness = 0.899999976158142100
+      ShadowOpacity = 0.400000005960464500
+      object SpeedButton1: TSpeedButton
+        Align = Center
+        HitTest = False
+        IconTintColor = claWhite
+        Locked = True
+        Size.Width = 48.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'composetoolbutton'
+        Text = 'SpeedButton1'
+      end
+    end
+  end
+end

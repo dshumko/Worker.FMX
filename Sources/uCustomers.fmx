@@ -1,0 +1,44 @@
+inherited frmCustomers: TfrmCustomers
+  Caption = #1040#1073#1086#1085#1077#1085#1090#1099
+  DesignerMasterStyle = 3
+  inherited Content: TRectangle
+    inherited rHeader: TRectangle
+      inherited lbTitle: TLabel
+        Text = #1040#1073#1086#1085#1077#1085#1090#1099
+      end
+      inherited sbBookmark: TSpeedButton
+        Size.Height = 48.000000000000000000
+      end
+    end
+    inherited lvContent: TListView
+      OnUpdatingObjects = lvContentUpdatingObjects
+    end
+    object btnNewCustomer: TZMaterialActionButton
+      Position.X = 256.000000000000000000
+      Position.Y = 368.000000000000000000
+      Size.Width = 56.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = btnNewCustomerClick
+      Color = xFFFF6600
+      ShadowDistance = 1.000000000000000000
+      ShadowSoftness = 0.899999976158142100
+      ShadowOpacity = 0.400000005960464400
+      object Label1: TLabel
+        Align = Client
+        StyledSettings = [Family, Style]
+        Size.Width = 56.000000000000000000
+        Size.Height = 56.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 29.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = '+'
+      end
+    end
+  end
+  inherited fgWait: TfgActivityDialog
+    Left = 72
+    Top = 90
+  end
+end

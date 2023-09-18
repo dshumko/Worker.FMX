@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{9A51220E-C614-4EF7-B120-8C8540E0C2D0}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="mobwork.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="C:\TempProjects\ListViewHeightAndStylesBerlin\ListViewTest.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\snippets\VKExpressionParser\Test\ParserTest.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="mobwork">
+        <MSBuild Projects="mobwork.dproj"/>
+    </Target>
+    <Target Name="mobwork:Clean">
+        <MSBuild Projects="mobwork.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="mobwork:Make">
+        <MSBuild Projects="mobwork.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ListViewTest">
+        <MSBuild Projects="C:\TempProjects\ListViewHeightAndStylesBerlin\ListViewTest.dproj"/>
+    </Target>
+    <Target Name="ListViewTest:Clean">
+        <MSBuild Projects="C:\TempProjects\ListViewHeightAndStylesBerlin\ListViewTest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ListViewTest:Make">
+        <MSBuild Projects="C:\TempProjects\ListViewHeightAndStylesBerlin\ListViewTest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ParserTest">
+        <MSBuild Projects="..\..\snippets\VKExpressionParser\Test\ParserTest.dproj"/>
+    </Target>
+    <Target Name="ParserTest:Clean">
+        <MSBuild Projects="..\..\snippets\VKExpressionParser\Test\ParserTest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ParserTest:Make">
+        <MSBuild Projects="..\..\snippets\VKExpressionParser\Test\ParserTest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="mobwork;ListViewTest;ParserTest"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="mobwork:Clean;ListViewTest:Clean;ParserTest:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="mobwork:Make;ListViewTest:Make;ParserTest:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

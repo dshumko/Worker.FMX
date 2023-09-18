@@ -1,0 +1,184 @@
+inherited frmBidComplete: TfrmBidComplete
+  Caption = #1047#1072#1082#1088#1099#1090#1100' '#1079#1072#1103#1074#1082#1091
+  OnVirtualKeyboardHidden = FormVirtualKeyboardHidden
+  DesignerMasterStyle = 3
+  inherited Content: TRectangle
+    inherited rHeader: TRectangle
+      inherited lbTitle: TLabel
+        Size.Width = 212.000000000000000000
+      end
+      object sbPhoto: TSpeedButton [1]
+        Align = Right
+        Position.X = 270.000000000000000000
+        Position.Y = 1.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Cam'
+        OnClick = sbPhotoClick
+      end
+    end
+    object pScroll: TVertScrollBox
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 430.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Viewport.Width = 320.000000000000000000
+      Viewport.Height = 430.000000000000000000
+      object lbTextDateTime: TLabel
+        Align = Top
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 8.000000000000000000
+        Margins.Top = 8.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 304.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        Text = '...'
+      end
+      object lbTextTroubleDescr: TLabel
+        Align = Top
+        AutoSize = True
+        StyledSettings = [Family, Style]
+        Margins.Left = 8.000000000000000000
+        Margins.Top = 8.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 39.000000000000000000
+        Size.Width = 304.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claDarkgray
+        TextSettings.Trimming = None
+        Text = '...'
+      end
+      object Layout1: TLayout
+        Align = Top
+        Margins.Left = 8.000000000000000000
+        Margins.Top = 8.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 104.000000000000000000
+        Size.Width = 304.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object DateEdit1: TDateEdit
+          Date = 42678.000000000000000000
+          Align = Left
+          Margins.Right = 4.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 153.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          TextSettings.HorzAlign = Center
+        end
+        object TimeEdit1: TTimeEdit
+          Time = 0.570833333333333300
+          Align = Client
+          Margins.Left = 4.000000000000000000
+          Margins.Top = 1.000000000000000000
+          Size.Width = 143.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          TabOrder = 1
+        end
+      end
+      object cbResult: TComboBox
+        Align = Top
+        Items.Strings = (
+          #1042#1099#1073#1088#1072#1090#1100'...'
+          #1042#1099#1087#1086#1083#1085#1077#1085#1072
+          #1054#1090#1084#1077#1085#1077#1085#1072
+          #1053#1077#1074#1086#1079#1084#1086#1078#1085#1086' '#1074#1099#1087#1086#1083#1085#1080#1090#1100)
+        ItemIndex = 0
+        Margins.Left = 8.000000000000000000
+        Margins.Top = 8.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 304.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+      end
+      object mTextResult: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Lines.Strings = (
+          #1042#1089#1077' '#1075#1086#1090#1086#1074#1086', '#1072#1073#1086#1085#1077#1085#1090' '#1076#1086#1074#1086#1083#1077#1085)
+        Align = Top
+        Margins.Left = 8.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 161.000000000000000000
+        Size.Width = 304.000000000000000000
+        Size.Height = 168.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        Viewport.Width = 296.000000000000000000
+        Viewport.Height = 160.000000000000000000
+      end
+      object Label1: TLabel
+        Align = Top
+        AutoSize = True
+        StyledSettings = [Family, Style]
+        Margins.Left = 8.000000000000000000
+        Margins.Top = 8.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 146.000000000000000000
+        Size.Width = 304.000000000000000000
+        Size.Height = 15.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Trimming = None
+        Text = #1054#1087#1080#1089#1072#1085#1080#1077' '#1074#1099#1087#1086#1083#1085#1077#1085#1085#1086#1081' '#1088#1072#1073#1086#1090#1099
+      end
+      object Layout2: TLayout
+        Align = Bottom
+        Position.Y = 370.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        object btnBidSave: TButton
+          Align = Left
+          Margins.Left = 8.000000000000000000
+          Margins.Top = 8.000000000000000000
+          Margins.Right = 8.000000000000000000
+          Margins.Bottom = 8.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 153.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'greenButton'
+          TabOrder = 0
+          Text = #1047#1072#1082#1088#1099#1090#1100' '#1079#1072#1103#1074#1082#1091
+          TintColor = claGreen
+          OnClick = btnBidSaveClick
+        end
+        object btnMaterials: TButton
+          Align = Client
+          Margins.Top = 8.000000000000000000
+          Margins.Right = 8.000000000000000000
+          Margins.Bottom = 8.000000000000000000
+          Size.Width = 143.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'authButton'
+          TabOrder = 1
+          Text = #1052#1072#1090#1077#1088#1080#1072#1083#1099
+          OnClick = btnMaterialsClick
+        end
+      end
+    end
+  end
+end

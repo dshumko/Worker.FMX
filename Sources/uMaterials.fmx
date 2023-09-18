@@ -1,0 +1,175 @@
+inherited frmMaterials: TfrmMaterials
+  Caption = #1052#1072#1090#1077#1088#1080#1072#1083#1099
+  DesignerMasterStyle = 3
+  inherited Content: TRectangle
+    inherited rHeader: TRectangle
+      inherited lbTitle: TLabel
+        Text = #1052#1072#1090#1077#1088#1080#1072#1083#1099
+      end
+    end
+    inherited lvContent: TListView
+      Size.Height = 279.000000000000000000
+    end
+    object lvSelected: TListView
+      ItemAppearanceClassName = 'TListItemAppearance'
+      ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TListHeaderObjects'
+      Align = Top
+      Position.Y = 50.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 151.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      OnItemClick = lvSelectedItemClick
+    end
+  end
+  object rLayInput: TRectangle [1]
+    Fill.Color = xAE000000
+    Position.X = 8.000000000000000000
+    Position.Y = 200.000000000000000000
+    Sides = []
+    Size.Width = 305.000000000000000000
+    Size.Height = 113.000000000000000000
+    Size.PlatformDefault = False
+    object Rectangle1: TRectangle
+      Align = Center
+      Fill.Color = claWhite
+      Sides = []
+      Size.Width = 281.000000000000000000
+      Size.Height = 103.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+      XRadius = 12.000000000000000000
+      YRadius = 12.000000000000000000
+      object Layout1: TLayout
+        Align = Top
+        Position.Y = 36.000000000000000000
+        Size.Width = 281.000000000000000000
+        Size.Height = 67.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object nbCount: TNumberBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Center
+          Anchors = [akLeft, akRight]
+          TabOrder = 0
+          Cursor = crIBeam
+          ValueType = Float
+          TextSettings.HorzAlign = Center
+          VertIncrement = 1.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Size.Width = 156.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Size, Style]
+        end
+        object btnOk: TButton
+          Align = Right
+          StyledSettings = [Family, Size, Style]
+          Margins.Top = 8.000000000000000000
+          Margins.Right = 8.000000000000000000
+          Margins.Bottom = 8.000000000000000000
+          Position.X = 158.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 115.000000000000000000
+          Size.Height = 51.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'greenButton'
+          TabOrder = 1
+          Text = #1044#1086#1073#1072#1074#1080#1090#1100
+          OnClick = btnOkClick
+        end
+      end
+      object lbRest: TLabel
+        Align = MostTop
+        StyledSettings = [Family, Size]
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 261.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = #1076#1086#1089#1090#1091#1087#1085#1086
+      end
+    end
+  end
+  object rLayOutput: TRectangle [2]
+    Fill.Color = xAE000000
+    Position.X = 7.000000000000000000
+    Position.Y = 64.000000000000000000
+    Sides = []
+    Size.Width = 305.000000000000000000
+    Size.Height = 113.000000000000000000
+    Size.PlatformDefault = False
+    object Rectangle3: TRectangle
+      Align = Center
+      Fill.Color = claWhite
+      Sides = []
+      Size.Width = 281.000000000000000000
+      Size.Height = 103.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+      XRadius = 12.000000000000000000
+      YRadius = 12.000000000000000000
+      object Layout2: TLayout
+        Align = Top
+        Position.Y = 36.000000000000000000
+        Size.Width = 281.000000000000000000
+        Size.Height = 67.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object nbOut: TNumberBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Center
+          Anchors = [akLeft, akRight]
+          TabOrder = 0
+          Cursor = crIBeam
+          ValueType = Float
+          TextSettings.HorzAlign = Center
+          VertIncrement = 1.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Size.Width = 156.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Size, Style]
+        end
+        object btnOutput: TButton
+          Align = Right
+          StyledSettings = [Family, Size, Style]
+          Margins.Top = 8.000000000000000000
+          Margins.Right = 8.000000000000000000
+          Margins.Bottom = 8.000000000000000000
+          Position.X = 158.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 115.000000000000000000
+          Size.Height = 51.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'redButton'
+          TabOrder = 1
+          Text = #1059#1076#1072#1083#1080#1090#1100
+          OnClick = btnOutputClick
+        end
+      end
+      object lblOutput: TLabel
+        Align = MostTop
+        StyledSettings = [Family, Size]
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 261.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = #1074' '#1079#1072#1103#1074#1082#1077' '
+      end
+    end
+  end
+end

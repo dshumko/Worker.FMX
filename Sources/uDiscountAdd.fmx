@@ -1,0 +1,224 @@
+inherited frmDiscountAdd: TfrmDiscountAdd
+  Caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082#1086#1101#1092#1092#1080#1094#1080#1077#1085#1090
+  OnFocusChanged = FormFocusChanged
+  OnVirtualKeyboardHidden = FormVirtualKeyboardHidden
+  DesignerMasterStyle = 3
+  inherited Content: TRectangle
+    inherited rHeader: TRectangle
+      inherited lbTitle: TLabel
+        Text = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082#1086#1101#1092#1092#1080#1094#1080#1077#1085#1090
+      end
+      inherited sbBookmark: TSpeedButton
+        Size.Height = 48.000000000000000000
+      end
+    end
+    object tcTabs: TTabControl
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 430.000000000000000000
+      Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
+      TabIndex = 0
+      TabOrder = 0
+      TabPosition = None
+      Sizes = (
+        320s
+        430s
+        320s
+        430s)
+      object TabItem1: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'TabItem1'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        object pScroll: TPresentedScrollBox
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 430.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Viewport.Width = 320.000000000000000000
+          Viewport.Height = 430.000000000000000000
+          object btnSend: TButton
+            Align = Bottom
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 378.000000000000000000
+            Size.Width = 304.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'greenButton'
+            TabOrder = 0
+            Text = #1044#1086#1073#1072#1074#1080#1090#1100
+            TintColor = claGreen
+            OnClick = btnSendClick
+          end
+          object deFrom: TDateEdit
+            Date = 43617.000000000000000000
+            TodayDefault = True
+            Align = Top
+            Margins.Left = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 31.000000000000000000
+            Size.Width = 304.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+          end
+          object deTo: TDateEdit
+            Date = 43617.000000000000000000
+            TodayDefault = True
+            Align = Top
+            Margins.Left = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 94.000000000000000000
+            Size.Width = 304.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+          end
+          object Label2: TLabel
+            Align = Top
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 71.000000000000000000
+            Size.Width = 304.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            Text = #1055#1086' '#1082#1072#1082#1086#1077' '#1095#1080#1089#1083#1086':'
+            TabOrder = 3
+          end
+          object edSum: TZMaterialEdit
+            Align = Top
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 134.000000000000000000
+            Size.Width = 304.000000000000000000
+            Size.Height = 51.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            Prompt = #1050#1086#1101#1092#1092#1080#1094#1080#1077#1085#1090':'
+            StyledSettings = [Family, Size, Style, FontColor]
+            TextSettingsPrompt.WordWrap = False
+            StyledSettingsPrompt = [Family]
+            KeyboardType = NumberPad
+          end
+          object Label3: TLabel
+            Align = Top
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 249.000000000000000000
+            Size.Width = 304.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 12.500000000000000000
+            Text = #1055#1088#1080#1084#1077#1095#1072#1085#1080#1077':'
+            TabOrder = 5
+          end
+          object mNotice: TMemo
+            Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+            DataDetectorTypes = []
+            Align = Top
+            Margins.Left = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 266.000000000000000000
+            Size.Width = 304.000000000000000000
+            Size.Height = 70.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 6
+            Viewport.Width = 304.000000000000000000
+            Viewport.Height = 70.000000000000000000
+          end
+          object sbSelect: TSpeedButton
+            Align = Top
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 193.000000000000000000
+            Size.Width = 304.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            Text = #1059#1082#1072#1078#1080#1090#1077' '#1085#1072' '#1095#1090#1086' '#1089#1082#1080#1076#1082#1072'...'
+            OnClick = sbSelectClick
+            object SpeedButton1: TSpeedButton
+              Align = Right
+              HitTest = False
+              Position.X = 256.000000000000000000
+              Size.Width = 48.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'arrowrighttoolbutton'
+            end
+          end
+          object lbl1: TLabel
+            Align = Top
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 8.000000000000000000
+            Size.Width = 304.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            Text = #1057' '#1082#1072#1082#1086#1075#1086' '#1095#1080#1089#1083#1072':'
+            TabOrder = 8
+          end
+        end
+      end
+      object TabItem2: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'TabItem2'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        object lvDiscounts: TListView
+          ItemAppearanceClassName = 'TListItemAppearance'
+          ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          OnUpdatingObjects = lvDiscountsUpdatingObjects
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 430.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          OnApplyStyleLookup = lvDiscountsApplyStyleLookup
+          OnItemClick = lvDiscountsItemClick
+        end
+      end
+    end
+  end
+  inherited fgWait: TfgActivityDialog
+    Left = 184
+    Top = 330
+  end
+end

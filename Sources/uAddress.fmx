@@ -1,0 +1,23 @@
+inherited frmAddress: TfrmAddress
+  Caption = #1059#1083#1080#1094#1099' / '#1076#1086#1084#1072
+  DesignerMasterStyle = 0
+  inherited Content: TRectangle
+    inherited rHeader: TRectangle
+      inherited lbTitle: TLabel
+        Text = #1040#1076#1088#1077#1089
+      end
+      inherited sbBack: TZMaterialBackButton
+        object btnBookMark: TSpeedButton
+          Align = Right
+          Size.Width = 50.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Visible = False
+        end
+      end
+      inherited sbBookmark: TSpeedButton
+        OnClick = sbBookmarkClick
+      end
+    end
+  end
+end

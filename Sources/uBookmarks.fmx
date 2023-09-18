@@ -1,0 +1,11 @@
+inherited frmBookmarks: TfrmBookmarks
+  Caption = #1047#1072#1082#1083#1072#1076#1082#1080
+  DesignerMasterStyle = 0
+  inherited Content: TRectangle
+    inherited rHeader: TRectangle
+      inherited lbTitle: TLabel
+        Text = #1047#1072#1082#1083#1072#1076#1082#1080
+      end
+    end
+  end
+end

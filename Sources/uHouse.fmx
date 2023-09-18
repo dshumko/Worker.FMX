@@ -1,0 +1,23 @@
+inherited frmHouse: TfrmHouse
+  Caption = #1044#1086#1084#1072
+  DesignerMasterStyle = 0
+  inherited Content: TRectangle
+    inherited rHeader: TRectangle
+      inherited sbBack: TZMaterialBackButton
+        object btnBookMark: TSpeedButton
+          Align = Right
+          Size.Width = 50.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Visible = False
+        end
+      end
+      inherited sbBookmark: TSpeedButton
+        OnClick = sbBookmarkClick
+      end
+    end
+    inherited lvContent: TListView
+      OnUpdatingObjects = lvContentUpdatingObjects
+    end
+  end
+end

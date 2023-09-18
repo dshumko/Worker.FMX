@@ -1,0 +1,407 @@
+inherited frmNewAbonent: TfrmNewAbonent
+  Caption = #1056#1077#1076#1072#1082#1090#1080#1088#1086#1074#1072#1085#1080#1077' '#1072#1073#1086#1085#1077#1085#1090#1072
+  OnFocusChanged = FormFocusChanged
+  OnVirtualKeyboardHidden = FormVirtualKeyboardHidden
+  DesignerMasterStyle = 3
+  inherited Content: TRectangle
+    inherited rHeader: TRectangle
+      inherited sbBack: TZMaterialBackButton
+        Size.PlatformDefault = False
+      end
+      inherited sbBookmark: TSpeedButton
+        Size.Height = 48.000000000000000000
+      end
+    end
+    object tcTabs: TTabControl
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 380.000000000000000000
+      Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
+      TabIndex = 1
+      TabOrder = 0
+      TabPosition = None
+      OnChange = tcTabsChange
+      Sizes = (
+        320s
+        380s
+        320s
+        380s
+        320s
+        380s
+        320s
+        380s
+        320s
+        380s)
+      object tiAbonent: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = #1040#1073#1086#1085#1077#1085#1090
+        ExplicitSize.cx = 80.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        object pScroll: TPresentedScrollBox
+          ScrollDirections = Vertical
+          Align = Client
+          Margins.Bottom = 8.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 372.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Viewport.Width = 320.000000000000000000
+          Viewport.Height = 372.000000000000000000
+          object edFlat: TZMaterialEdit
+            Align = Top
+            Margins.Left = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Size.Width = 304.000000000000000000
+            Size.Height = 51.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 5
+            Prompt = #1050#1074#1072#1088#1090#1080#1088#1072'*'
+            StyledSettings = [Family, Size, Style, FontColor]
+            TextSettingsPrompt.WordWrap = False
+            StyledSettingsPrompt = [Family]
+            KillFocusByReturn = True
+          end
+          object edSecondName: TZMaterialEdit
+            Align = Top
+            Margins.Left = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 51.000000000000000000
+            Size.Width = 304.000000000000000000
+            Size.Height = 51.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            Prompt = #1060#1072#1084#1080#1083#1080#1103'*'
+            StyledSettings = [Family, Size, Style, FontColor]
+            TextSettingsPrompt.WordWrap = False
+            StyledSettingsPrompt = [Family]
+            KillFocusByReturn = True
+          end
+          object edName: TZMaterialEdit
+            Align = Top
+            Margins.Left = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 102.000000000000000000
+            Size.Width = 304.000000000000000000
+            Size.Height = 51.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            Prompt = #1048#1084#1103
+            StyledSettings = [Family, Size, Style, FontColor]
+            TextSettingsPrompt.WordWrap = False
+            StyledSettingsPrompt = [Family]
+            KillFocusByReturn = True
+          end
+          object edThirdName: TZMaterialEdit
+            Align = Top
+            Margins.Left = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 153.000000000000000000
+            Size.Width = 304.000000000000000000
+            Size.Height = 51.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Prompt = #1054#1090#1095#1077#1089#1090#1074#1086
+            StyledSettings = [Family, Size, Style, FontColor]
+            TextSettingsPrompt.WordWrap = False
+            StyledSettingsPrompt = [Family]
+            KillFocusByReturn = True
+          end
+          object edPassportNum: TZMaterialEdit
+            Align = Top
+            Margins.Left = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 204.000000000000000000
+            Size.Width = 304.000000000000000000
+            Size.Height = 51.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Prompt = #1055#1072#1089#1087#1086#1088#1090': '#1089#1077#1088#1080#1103
+            StyledSettings = [Family, Size, Style, FontColor]
+            TextSettingsPrompt.WordWrap = False
+            StyledSettingsPrompt = [Family]
+            KillFocusByReturn = True
+          end
+          object edPassportReg: TZMaterialEdit
+            Align = Top
+            Margins.Left = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 255.000000000000000000
+            Size.Width = 304.000000000000000000
+            Size.Height = 51.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Prompt = #1055#1072#1089#1087#1086#1088#1090': '#1088#1077#1075#1080#1089#1090#1088#1072#1094#1080#1103
+            StyledSettings = [Family, Size, Style, FontColor]
+            TextSettingsPrompt.WordWrap = False
+            StyledSettingsPrompt = [Family]
+            KillFocusByReturn = True
+          end
+        end
+      end
+      object tiService: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = #1059#1089#1083#1091#1075#1080
+        ExplicitSize.cx = 80.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        object lvServices: TListView
+          ItemAppearanceClassName = 'TListItemAppearance'
+          ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          OnUpdatingObjects = lvServicesUpdatingObjects
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 380.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          OnItemClick = lvServicesItemClick
+        end
+        object fabServices: TZMaterialActionButton
+          Position.X = 248.000000000000000000
+          Position.Y = 312.000000000000000000
+          Size.Width = 56.000000000000000000
+          Size.Height = 56.000000000000000000
+          Size.PlatformDefault = False
+          OnClick = fabServicesClick
+          Color = xFFFF6600
+          ShadowDistance = 1.000000000000000000
+          ShadowSoftness = 0.899999976158142100
+          ShadowOpacity = 0.400000005960464500
+          object SpeedButton1: TSpeedButton
+            Align = Center
+            HitTest = False
+            IconTintColor = claWhite
+            Locked = True
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'additembutton'
+          end
+        end
+      end
+      object tiEqiupment: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = #1054#1073#1086#1088#1091#1076#1086#1074#1072#1085#1080#1077
+        ExplicitSize.cx = 80.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        object lvEquipment: TListView
+          ItemAppearanceClassName = 'TListItemAppearance'
+          ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          OnUpdatingObjects = lvServicesUpdatingObjects
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 380.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          OnItemClick = lvEquipmentItemClick
+          object fabEquipment: TZMaterialActionButton
+            Position.X = 248.000000000000000000
+            Position.Y = 312.000000000000000000
+            Size.Width = 56.000000000000000000
+            Size.Height = 56.000000000000000000
+            Size.PlatformDefault = False
+            OnClick = fabEquipmentClick
+            Color = xFFFF6600
+            ShadowDistance = 1.000000000000000000
+            ShadowSoftness = 0.899999976158142100
+            ShadowOpacity = 0.400000005960464500
+            object SpeedButton2: TSpeedButton
+              Align = Center
+              HitTest = False
+              IconTintColor = claWhite
+              Locked = True
+              Size.Width = 48.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'additembutton'
+            end
+          end
+        end
+      end
+      object tiDiscount: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = #1050#1086#1101#1092#1092#1080#1094#1080#1077#1085#1090#1099
+        ExplicitSize.cx = 80.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        object lvDiscount: TListView
+          ItemAppearanceClassName = 'TListItemAppearance'
+          ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          OnUpdatingObjects = lvServicesUpdatingObjects
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 380.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          OnItemClick = lvDiscountItemClick
+          object fabDiscount: TZMaterialActionButton
+            Position.X = 256.000000000000000000
+            Position.Y = 320.000000000000000000
+            Size.Width = 56.000000000000000000
+            Size.Height = 56.000000000000000000
+            Size.PlatformDefault = False
+            OnClick = fabDiscountClick
+            Color = xFFFF6600
+            ShadowDistance = 1.000000000000000000
+            ShadowSoftness = 0.899999976158142100
+            ShadowOpacity = 0.400000005960464500
+            object SpeedButton3: TSpeedButton
+              Align = Center
+              HitTest = False
+              IconTintColor = claWhite
+              Locked = True
+              Size.Width = 48.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'additembutton'
+            end
+          end
+        end
+      end
+      object tiNotice: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = #1055#1088#1080#1084#1077#1095#1072#1085#1080#1077
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        object btnSend: TButton
+          Align = Top
+          Margins.Left = 8.000000000000000000
+          Margins.Top = 8.000000000000000000
+          Margins.Right = 8.000000000000000000
+          Margins.Bottom = 8.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 169.000000000000000000
+          Size.Width = 304.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'greenButton'
+          TabOrder = 1
+          Text = #1054#1090#1087#1088#1072#1074#1080#1090#1100
+          TintColor = claGreen
+          OnClick = btnSendClick
+        end
+        object Layout7: TLayout
+          Align = Top
+          Margins.Left = 8.000000000000000000
+          Margins.Top = 8.000000000000000000
+          Margins.Right = 8.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 304.000000000000000000
+          Size.Height = 153.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Label7: TLabel
+            Align = Top
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Right = 8.000000000000000000
+            Size.Width = 296.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 12.500000000000000000
+            Text = #1055#1088#1080#1084#1077#1095#1072#1085#1080#1077
+          end
+          object mDesc: TMemo
+            Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+            DataDetectorTypes = []
+            Align = Client
+            Size.Width = 304.000000000000000000
+            Size.Height = 131.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Viewport.Width = 304.000000000000000000
+            Viewport.Height = 131.000000000000000000
+          end
+        end
+      end
+    end
+    object Layout1: TLayout
+      Align = Bottom
+      Position.Y = 430.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object sbPrevTab: TSpeedButton
+        Align = Left
+        IconTintColor = xFFFF6600
+        Position.Y = 1.000000000000000000
+        Size.Width = 48.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'arrowlefttoolbutton'
+        Text = #1053#1072#1079#1072#1076
+        OnClick = sbPrevTabClick
+      end
+      object sbNextTab: TSpeedButton
+        Align = Right
+        IconTintColor = xFFFF6600
+        Position.X = 272.000000000000000000
+        Position.Y = 1.000000000000000000
+        Size.Width = 48.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'arrowrighttoolbutton'
+        Text = #1042#1087#1077#1088#1077#1076
+        OnClick = sbNextTabClick
+      end
+      object lblPage: TLabel
+        Align = Client
+        Size.Width = 224.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+      end
+    end
+  end
+end

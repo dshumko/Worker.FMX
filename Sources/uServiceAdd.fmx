@@ -1,0 +1,110 @@
+inherited frmServiceAdd: TfrmServiceAdd
+  Caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1091#1089#1083#1091#1075#1091
+  DesignerMasterStyle = 0
+  inherited Content: TRectangle
+    inherited rHeader: TRectangle
+      inherited lbTitle: TLabel
+        Text = #1044#1086#1073#1072#1074#1080#1090#1100' '#1091#1089#1083#1091#1075#1091
+      end
+    end
+    object tcTabs: TTabControl
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 430.000000000000000000
+      Size.PlatformDefault = False
+      TabIndex = 0
+      TabOrder = 0
+      TabPosition = None
+      Sizes = (
+        320s
+        430s
+        320s
+        430s
+        320s
+        430s)
+      object TabItem1: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'TabItem1'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        object lvServices: TListView
+          ItemAppearanceClassName = 'TListItemAppearance'
+          ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          OnUpdatingObjects = lvServicesUpdatingObjects
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 430.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          OnApplyStyleLookup = lvServicesApplyStyleLookup
+          OnItemClick = lvServicesItemClick
+        end
+      end
+      object TabItem2: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'TabItem2'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        object lvPrice: TListView
+          ItemAppearanceClassName = 'TListItemAppearance'
+          ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          OnUpdatingObjects = lvServicesUpdatingObjects
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 430.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          OnApplyStyleLookup = lvPriceApplyStyleLookup
+          OnItemClick = lvPriceItemClick
+        end
+      end
+      object TabItem3: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'TabItem3'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        object Calendar1: TCalendar
+          Align = Top
+          Date = 43014.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 225.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          OnDateSelected = Calendar1DateSelected
+        end
+      end
+    end
+  end
+  inherited fgWait: TfgActivityDialog
+    Left = 200
+    Top = 290
+  end
+end

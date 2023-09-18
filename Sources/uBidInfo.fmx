@@ -1,0 +1,84 @@
+inherited frmBidInfo: TfrmBidInfo
+  Caption = #1047#1072#1103#1074#1082#1072
+  DesignerMasterStyle = 0
+  inherited Content: TRectangle
+    inherited rHeader: TRectangle
+      inherited lbTitle: TLabel
+        Text = #1047#1072#1103#1074#1082#1072
+      end
+      inherited sbBookmark: TSpeedButton
+        OnClick = sbBookmarkClick
+      end
+    end
+    inherited lvContent: TListView
+      OnUpdatingObjects = lvContentUpdatingObjects
+      Size.Height = 370.000000000000000000
+    end
+    object lyButtons: TLayout
+      Align = Bottom
+      Position.Y = 420.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object sbBidDo: TSpeedButton
+        Align = Left
+        Margins.Left = 8.000000000000000000
+        Margins.Top = 8.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Margins.Bottom = 8.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'greenButton'
+        Text = #1042#1079#1103#1090#1100
+        OnClick = sbBidDoClick
+      end
+      object sbBidClose: TSpeedButton
+        Align = Client
+        Margins.Left = 8.000000000000000000
+        Margins.Top = 8.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Margins.Bottom = 8.000000000000000000
+        Size.Width = 56.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'authButton'
+        Text = #1047#1072#1082#1088#1099#1090#1100
+        OnClick = sbBidCloseClick
+      end
+      object sbBidRefuse: TSpeedButton
+        Align = Right
+        Margins.Left = 8.000000000000000000
+        Margins.Top = 8.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Margins.Bottom = 8.000000000000000000
+        Position.X = 241.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 71.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'redButton'
+        Text = #1054#1090#1082#1072#1079#1072#1090#1100#1089#1103
+        OnClick = sbBidRefuseClick
+      end
+      object sbBidJoin: TSpeedButton
+        Align = Left
+        Margins.Left = 8.000000000000000000
+        Margins.Top = 8.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Margins.Bottom = 8.000000000000000000
+        Position.X = 89.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 64.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'greenButton'
+        Text = #1055#1088#1080#1089#1086#1077#1076#1080#1085#1080#1090#1100#1089#1103
+        OnClick = sbBidJoinClick
+      end
+    end
+  end
+end

@@ -1,0 +1,14 @@
+inherited frmPromotions: TfrmPromotions
+  Caption = #1040#1082#1094#1080#1080
+  DesignerMasterStyle = 0
+  inherited Content: TRectangle
+    inherited rHeader: TRectangle
+      inherited lbTitle: TLabel
+        Text = #1040#1082#1094#1080#1080
+      end
+    end
+    inherited lvContent: TListView
+      OnUpdatingObjects = lvContentUpdatingObjects
+    end
+  end
+end

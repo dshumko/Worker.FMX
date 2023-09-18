@@ -1,0 +1,51 @@
+object BasicFrame: TBasicFrame
+  Size.Width = 338.000000000000000000
+  Size.Height = 604.000000000000000000
+  Size.PlatformDefault = False
+  object rHeader: TRectangle
+    Align = Top
+    Fill.Color = xFFFF6600
+    Sides = []
+    Size.Width = 338.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    object lbTitle: TLabel
+      Align = Client
+      StyledSettings = [Family, Style]
+      HitTest = True
+      Margins.Left = 8.000000000000000000
+      Size.Width = 280.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 22.000000000000000000
+      TextSettings.FontColor = claWhite
+      Text = #1047#1072#1103#1074#1082#1080
+    end
+    object sbBack: TZMaterialBackButton
+      Align = Left
+      HitTest = True
+      Size.Width = 50.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnClick = sbBackClick
+      Kind = Back
+      Color = claWhite
+    end
+    object sbBookmark: TSpeedButton
+      Align = Right
+      Position.X = 270.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Visible = False
+    end
+  end
+  object fgWait: TfgActivityDialog
+    Cancellable = True
+    Message = #1055#1086#1076#1086#1078#1076#1080#1090#1077'...'
+    Theme = Light
+    Left = 144
+    Top = 202
+  end
+end

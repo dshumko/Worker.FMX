@@ -1,0 +1,17 @@
+inherited BasicLVFrame: TBasicLVFrame
+  object lvContent: TListView [1]
+    ItemAppearanceClassName = 'TListItemAppearance'
+    ItemEditAppearanceClassName = 'TListItemDeleteAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Client
+    Size.Width = 366.000000000000000000
+    Size.Height = 443.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    StyleLookup = 'listviewstyle_panel'
+  end
+  inherited fgWait: TfgActivityDialog
+    OnCancel = nil
+  end
+end

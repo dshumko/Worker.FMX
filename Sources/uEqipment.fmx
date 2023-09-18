@@ -1,0 +1,14 @@
+inherited frmEqipment: TfrmEqipment
+  Caption = #1054#1073#1086#1088#1091#1076#1086#1074#1072#1085#1080#1077
+  DesignerMasterStyle = 0
+  inherited Content: TRectangle
+    inherited rHeader: TRectangle
+      inherited lbTitle: TLabel
+        Text = #1054#1073#1086#1088#1091#1076#1086#1074#1072#1085#1080#1077
+      end
+    end
+    inherited lvContent: TListView
+      OnUpdatingObjects = lvContentUpdatingObjects
+    end
+  end
+end

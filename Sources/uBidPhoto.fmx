@@ -1,0 +1,162 @@
+inherited frmBidPhoto: TfrmBidPhoto
+  Caption = #1060#1086#1090#1086' '#1079#1072#1103#1074#1082#1080
+  DesignerMasterStyle = 3
+  inherited Content: TRectangle
+    inherited rHeader: TRectangle
+      inherited lbTitle: TLabel
+        Text = #1060#1086#1090#1086' '#1079#1072#1103#1074#1082#1080
+      end
+    end
+    inherited lvContent: TListView
+      Visible = False
+    end
+    object lyButtons: TLayout
+      Align = Bottom
+      Padding.Left = 8.000000000000000000
+      Padding.Right = 8.000000000000000000
+      Position.Y = 420.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object btnBidSave: TButton
+        Align = Client
+        StyledSettings = [Family, Size, Style]
+        Margins.Left = 8.000000000000000000
+        Margins.Top = 8.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Margins.Bottom = 8.000000000000000000
+        Size.Width = 288.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'greenButton'
+        TabOrder = 0
+        Text = #1057#1086#1093#1088#1072#1085#1080#1090#1100
+        TintColor = claGreen
+        OnClick = btnBidSaveClick
+      end
+    end
+    object lytPhoto1: TLayout
+      Align = Top
+      Position.Y = 50.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 167.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object imgPhoto1: TImage
+        MultiResBitmap.Height = 436
+        MultiResBitmap.Width = 250
+        MultiResBitmap = <
+          item
+          end>
+        Align = Client
+        MarginWrapMode = Fit
+        Size.Width = 232.000000000000000000
+        Size.Height = 167.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lyt3: TLayout
+        Align = Right
+        Position.X = 276.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 167.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object btnPhoto1: TSpeedButton
+          Action = actPhoto1
+          Align = Center
+          Enabled = True
+          ImageIndex = -1
+          Size.Width = 44.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          Visible = True
+          OnClick = btnPhoto1Click
+        end
+      end
+      object lyt5: TLayout
+        Align = Left
+        Size.Width = 44.000000000000000000
+        Size.Height = 167.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object btnDel1: TSpeedButton
+          Align = Center
+          Size.Width = 44.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Del'
+          OnClick = btnDelClick
+        end
+      end
+    end
+    object lytPhoto2: TLayout
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 203.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object imgPhoto2: TImage
+        MultiResBitmap.Height = 436
+        MultiResBitmap.Width = 250
+        MultiResBitmap = <
+          item
+          end>
+        Align = Client
+        MarginWrapMode = Fit
+        Size.Width = 232.000000000000000000
+        Size.Height = 203.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object ly2: TLayout
+        Align = Right
+        Position.X = 276.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 203.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object btnPhoto2: TSpeedButton
+          Action = actPhoto2
+          Align = Center
+          Enabled = True
+          ImageIndex = -1
+          Size.Width = 44.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          Visible = True
+          OnClick = btnPhoto2Click
+        end
+      end
+      object lyt4: TLayout
+        Align = Left
+        Size.Width = 44.000000000000000000
+        Size.Height = 203.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object btnDel2: TSpeedButton
+          Tag = 1
+          Align = Center
+          Size.Width = 44.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Del'
+          OnClick = btnDelClick
+        end
+      end
+    end
+  end
+  object actlst: TActionList
+    Left = 160
+    Top = 272
+    object actPhoto1: TTakePhotoFromCameraAction
+      Category = 'Media Library'
+      CustomText = #1057#1076#1077#1083#1072#1090#1100' '#1060#1086#1090#1086
+      OnDidFinishTaking = actPhoto1DidFinishTaking
+    end
+    object actPhoto2: TTakePhotoFromCameraAction
+      Category = 'Media Library'
+      CustomText = #1057#1076#1077#1083#1072#1090#1100' '#1060#1086#1090#1086
+      OnDidFinishTaking = actPhoto2DidFinishTaking
+    end
+  end
+end

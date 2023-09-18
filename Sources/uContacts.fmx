@@ -1,0 +1,4 @@
+inherited frmContacts: TfrmContacts
+  Caption = #1058#1077#1083#1077#1092#1086#1085#1099
+  DesignerMasterStyle = 0
+end

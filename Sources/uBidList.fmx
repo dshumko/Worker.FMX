@@ -1,0 +1,15 @@
+inherited frmBidList: TfrmBidList
+  Caption = #1057#1087#1080#1089#1086#1082' '#1079#1072#1103#1074#1086#1082
+  OnActivate = FormActivate
+  DesignerMasterStyle = 0
+  inherited Content: TRectangle
+    inherited rHeader: TRectangle
+      inherited lbTitle: TLabel
+        Text = #1047#1072#1103#1074#1082#1080
+      end
+    end
+    inherited lvContent: TListView
+      OnUpdatingObjects = lvContentUpdatingObjects
+    end
+  end
+end

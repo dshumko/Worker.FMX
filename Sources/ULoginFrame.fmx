@@ -1,0 +1,117 @@
+object LoginFrame: TLoginFrame
+  Size.Width = 360.000000000000000000
+  Size.Height = 640.000000000000000000
+  Size.PlatformDefault = False
+  OnResize = FrameResize
+  object layUserAuth: TLayout
+    Align = Client
+    Padding.Top = 10.000000000000000000
+    Size.Width = 360.000000000000000000
+    Size.Height = 640.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object edCompany: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 0
+      ReturnKeyType = Next
+      Position.X = 8.000000000000000000
+      Position.Y = 10.000000000000000000
+      Margins.Left = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Size.Width = 344.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = #1054#1088#1075#1072#1085#1080#1079#1072#1094#1080#1103
+      OnKeyUp = edCompanyKeyUp
+    end
+    object edUserAcc: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 1
+      ReturnKeyType = Next
+      Position.X = 8.000000000000000000
+      Position.Y = 50.000000000000000000
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Size.Width = 344.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = #1057#1086#1090#1088#1091#1076#1085#1080#1082
+      OnKeyUp = edUserAccKeyUp
+    end
+    object edUserPass: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 2
+      ReturnKeyType = Next
+      Password = True
+      Position.X = 8.000000000000000000
+      Position.Y = 90.000000000000000000
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Size.Width = 344.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = #1055#1072#1088#1086#1083#1100
+      OnTyping = edUserPassTyping
+      OnKeyUp = edUserPassKeyUp
+    end
+    object Layout1: TLayout
+      Align = Top
+      Margins.Top = 10.000000000000000000
+      Position.Y = 132.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 80.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object btnUserAuth: TButton
+        Align = Bottom
+        Margins.Left = 8.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 36.000000000000000000
+        Size.Width = 344.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'authButton'
+        TabOrder = 0
+        Text = #1042#1086#1081#1090#1080
+        OnClick = btnUserAuthClick
+      end
+      object lbAutoEnter: TLabel
+        Align = Top
+        StyledSettings = [Family, Size, Style]
+        Margins.Left = 8.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 344.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claWhite
+        Text = #1047#1072#1087#1086#1084#1085#1080#1090#1100
+        object swAutoEnter: TSwitch
+          Align = Right
+          IsChecked = False
+          Position.X = 300.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          OnSwitch = swAutoEnterSwitch
+        end
+      end
+    end
+  end
+  object fgWait: TfgActivityDialog
+    Message = #1055#1086#1076#1086#1078#1076#1080#1090#1077'...'
+    Theme = Light
+    Left = 288
+    Top = 274
+  end
+end
